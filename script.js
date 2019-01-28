@@ -153,3 +153,43 @@ if(username){
 username1 !== null ? 
     alert(`Nice to meet you ${username1}`):
     alert(`Don't be shy !`)
+
+function myFunc(text){
+    //codeHere
+    console.log(text);
+    return;
+}
+console.log('myFunc', myFunc());
+
+/*
+const myFunc2 = (text) => {
+    //codeHere
+    return text;
+}
+console.log('myFunc2', myFunc2());
+*/
+
+/*
+const sum = (p1, p2 = 0) =>{
+    return p1 + p2;
+}
+
+console.log(sum(4, 10));
+*/
+
+const sum = (p1, p2 = 0) => p1 + p2;
+
+console.log(sum(4, 10));
+
+const truncate = (str, lenght, trail='...') =>{
+    if(str,lenght > lenght){
+        return str.substring(0, lenght) + trail
+    }else{
+        return str
+    }
+}
+
+const res1 = truncate('I will be truncated', 15, '->') // returns 'I will be trunc->'
+console.log('res1', res1)
+const res2 = truncate('I will be truncated', 5) // returns 'I wil...'
+console.log('res2', res2)
