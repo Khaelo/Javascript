@@ -223,4 +223,37 @@ console.log(MyAr2) //[0, 2, 3];
 */
 
 const myArr1 = [1, 2, 3];
-const myArr2 = [...myArr1]
+const myArr2 = [...myArr1];
+
+const user = {
+    id: 1,
+    name: 'Luca',
+    email: 'email@email.com',
+    car: {
+        color: 'red',
+    },
+    test: [1, 2, 3],
+}
+
+console.log(user.id); //1
+console.log(user['name']); //Luca
+console.log(user.car.color); //red
+console.log(user.car['color']); //red
+console.log(user['car'].color); //red
+
+const myProp = 'car';
+console.log(user[myProp].color); //red
+
+const cart = [
+    { item: 'a', price: 2, quantity: 1 },
+    { item: 'b', price: 3, quantity: 1 },
+    { item: 'c', price: 4, quantity: 1 }
+  ];
+
+const result = cart.reduce((acc, curVal) =>{
+    console.log('acc', acc);
+    console.log('curVal', curVal);
+    return acc +=curVal.price * curVal.quantity
+}, 0);
+
+console.log('result', result);
