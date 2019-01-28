@@ -69,4 +69,87 @@ console.log('4' + 3); //'43'
 console.log(3 + 4 + '7'); //'77'
 console.log('3' + 4 + 7); //'347'
 
-//Concatenation
+console.log('2 > 1', 2 > 1); //true
+console.log('2 < 1', 2 < 1); //false
+
+console.log('20 >= 10', 20 >= 10); //true
+
+console.log('10 >= 10', 10 >= 10); //true
+
+console.log(4 != '4'); // 4 != 4 false
+console.log(4 !== '4'); //true
+
+console.log('hello' === 'Hello'); //false
+
+/*
+if (condition){
+    console.log('1');
+} else if(condition2){
+    console.log('2');
+} else{
+    
+}
+*/
+
+if(5 >0 || 5 > 10){
+    console.log('1');
+}else{
+    console.log('2');
+}
+
+let ab = 20 / 2;
+if(ab > 10 || ab < 15){
+    console.log('Yes');
+}else{
+    console.log('No');
+}
+
+// can see the group
+//let isPrivate = false;
+//let isMember = false;
+
+// can't see the group
+let isPrivate = true;
+let isMember = false;
+
+if (isPrivate === false || (isPrivate === true && isMember === true)){
+    console.log('can see the groupe');
+}else{
+    console.log(`can't see the group`)
+}
+
+const today = 'lundi';
+if (today === 'lundi1'){
+    console.log(`Aujourd'hui on est: ${today}`);
+}else if(today === 'mardi'){
+    console.log(`Aujourd'hui on est: ${today}`);
+}else if(today === 'mercredi'){
+    console.log(`Aujourd'hui on est: ${today}`);
+}
+
+switch(today){
+    case 'lundi':
+    console.log(`Aujourd'hui on est: ${today}`);
+    break;
+    case 'mardi':
+    console.log(`Aujourd'hui on est: ${today}`);
+    break;
+    case 'mercredi':
+    console.log(`Aujourd'hui on est: ${today}`);
+    break;
+}
+
+let username1 = prompt('What is your username');
+console.log('username', username1);
+
+/*
+if(username){
+    alert(`Nice to meet you ${username}`):
+}else{
+    alert(`Don't be shy !`)
+}
+*/
+
+username1 !== null ? 
+    alert(`Nice to meet you ${username1}`):
+    alert(`Don't be shy !`)
