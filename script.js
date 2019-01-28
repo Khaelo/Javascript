@@ -193,3 +193,34 @@ const res1 = truncate('I will be truncated', 15, '->') // returns 'I will be tru
 console.log('res1', res1)
 const res2 = truncate('I will be truncated', 5) // returns 'I wil...'
 console.log('res2', res2)
+
+const myArray = [1, "hello", Array(3)];
+console.log(typeof myArray);
+console.log(myArray [0]);
+console.log(myArray [1]);
+console.log(myArray.length);
+console.log(myArray[myArray.length - 1]);
+
+const arr = [0, 1, 2, 3, 4, 5];
+arr.map(x => {
+    console.log('x', x);
+    return x / 2;
+})
+
+let resu = [];
+arr.forEach(num =>{
+    console.log('num', num);
+    resu.push(num / 2);
+})
+console.log('res', resu);
+
+/*
+const myAr1 = [1, 2, 3];
+const myAr2 = myAr1;
+myAr2[0] = 0;
+console.log(myAr1) //[0, 2, 3];
+console.log(MyAr2) //[0, 2, 3];
+*/
+
+const myArr1 = [1, 2, 3];
+const myArr2 = [...myArr1]
