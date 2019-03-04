@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Script</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+
+    <style>
+        #js-slide-example-address {
+            margin: 0;
+            padding: 2rem;
+            background-color:	#b9bdd4;
+        }
+
+#js-slide-example-links {
+            display: flex;
+            padding: 1rem 2rem;
+            background-color: #6e6f87;
+            color: #fff;
+        }
+
+#js-slide-example-links a {
+            margin-right: 2rem;
+            color: inherit;
+        }
+
+        #js-animation-1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            border: 0 solid red;
+        }
+    </style>
+
+    <br /><div class="alert alert-primary" style="display: none;" id="js-alert">
+            Hide me!
+            <button id="js-hide-alert">✕</button>
+    </div>
+    <button class="btn btn-primary" id="js-show-alert">Show alert</button><br />
+
+    <br /><p id="js-slide-example-address">Quai de Chartrons 33000 Bordeaux</p>
+    <div id="js-slide-example-links" style="display: none;">
+        <a href="#">Voir sur la carte</a>
+        <a href="#">Directions</a>
+    </div><br />
+
+    <button class="btn btn-success" id="js-btn-fade-in">Fade In</button>
+    <button class="btn btn-danger" id="js-btn-fade-out">Fade Out</button>
+    <div style="background:#2E9AFE; width:200px; height:200px; margin-top:30px;" id="js-div-fade-in-out"></div>
+    
+    <br/><div id="js-animation-1"></div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
